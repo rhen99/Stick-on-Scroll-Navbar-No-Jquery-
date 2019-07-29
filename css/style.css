@@ -1,0 +1,119 @@
+/* All Defaults */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	line-height: 1.4;
+	color: #333;
+}
+a {
+	text-decoration: none;
+	display: inline-block;
+}
+ul {
+	list-style: none;
+}
+
+/* Navbar */
+.navbar {
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+.navbar .brand-logo {
+	flex: 1;
+}
+.navbar .brand-logo h1 {
+	padding: 0.8rem 0;
+}
+.navbar ul {
+	flex: 1;
+	display: flex;
+	justify-content: flex-end;
+}
+.navbar ul .nav-item {
+	padding: 1.3rem 0.8rem;
+}
+.on-top {
+	padding: 0.5rem 0;
+	border-bottom: 1px solid #f4f4f494;
+	transition: all 300ms;
+}
+.on-top .brand-logo h1 {
+	font-size: 2rem;
+	color: #fff;
+}
+.on-top .nav-item a {
+	color: #fff;
+	font-weight: 400;
+	font-size: 1.1rem;
+}
+.not-on-top {
+	transition: all 300ms;
+	position: fixed;
+	left: 0;
+	top: 0;
+	background-color: #fff;
+}
+.not-on-top .nav-item a {
+	color: #333;
+}
+/* Hero */
+.hero {
+	flex-direction: column;
+	width: 100%;
+	height: 100vh;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background: #ddd url(../img/apple-black-and-white-black-and-white-169573.jpg)
+		no-repeat center center / cover;
+}
+.hero-inner h1 {
+	font-size: 4rem;
+	color: #fff;
+}
+.hero-inner p {
+	font-size: 2rem;
+	color: #fff;
+	margin: 0.5rem 0;
+}
+/* Newsletter */
+
+/* All Utilities */
+.container {
+	max-width: 1200px;
+	margin: auto;
+	overflow: hidden;
+	padding: 0 1rem;
+}
+.d-flex {
+	display: flex;
+}
+.d-grid {
+	display: grid;
+}
+.fraction-3 {
+	grid-template-columns: repeat(3, 1fr);
+}
+.btn {
+	border: 0;
+	outline: 0;
+	padding: 0.7rem 1.2rem;
+	font-size: 1rem;
+	font-weight: 500;
+}
+.btn-large {
+	padding: 1rem 1.5rem;
+}
+.btn-primary {
+	background-color: rgb(51, 51, 51);
+	color: #fff;
+}
+.btn-primary:hover {
+	background-color: rgb(31, 31, 31);
+}
