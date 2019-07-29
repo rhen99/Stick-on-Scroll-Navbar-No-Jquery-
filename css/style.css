@@ -152,3 +152,9 @@ ul {
 .btn-primary:hover {
 	background-color: rgb(31, 31, 31);
 }
+/* Media */
+@media (max-width: 768px) {
+	.fraction-3 {
+		grid-template-columns: 1fr;
+	}
+}
